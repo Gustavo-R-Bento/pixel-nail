@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+         
+}
+
+body{
+    background-color: #F7F7F7;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+
+/* BARRA SUPERIOR */
+header > .barrasup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #68328E, #522770, #44205e,#1D0E28);
+    margin: 0 auto;
+    padding: 14px 4%;
+    
+}
+
+.logo ul{
+    list-style-type: none;
+}
+
+.logo ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22pt;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.logo:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+.user:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+/* FIM BARRA SUPERIOR */
+
+/* MENU */
+header a{
+    text-decoration: none;
+    color: #a0a0a0;
+    padding: 5px;
+    display: inline-block;
+}
+
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 84px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 14pt;
+    
+}
+
+.menu-desktop ul li a:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor: pointer;
+    color: #F7F7F7;
+
+}
+/* FIM MENU */
+
+/* MENU MOBILE */
+.btn-menu:hover{
+    cursor: pointer;
+}
+
+.menu-mobile{
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.menu-mobile.open-menu{
+    width: 20%;
+}
+
+.menu-mobile.open-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile nav ul li a{
+    font: normal 16pt arial;
+    padding: 20px 6%;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: .2s;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #8E8E8E;
+}
+
+.btn-close{
+    color: black;
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 88888;
+    display: none;
+}
+/* FIM MENU MOBILE */
+
+/* TOPO SITE */
+section{ 
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 22pt;
+    
+}
+
+.img-topo-site{
+    text-align: center; 
+    object-fit: cover;
+}
+.btn-agen{
+    margin-top: 25px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #68328E, #522770, #45235f);
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 16pt;
+    color: #ffffff;
+}
+
+.btn-agen:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+    box-shadow: 0px 0px 15px #68328E;
+    cursor: pointer;
+
+}
+
+.txt-topo-site{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top: 80px;
+    color: #ffffff;
+}
+/* FIM TOPO SITE */
+
+/* CONTENT */
+.content{
+    font-size: 26pt;
+    max-width: 1600px;
+    margin: 0px auto;
+}
+.txt-banho-gel{
+    padding-top: 250px;
+}
+.txt-banho-gel p{
+    color: #6d6d6d;
+    font-size: 20pt;
+    width: 600px;
+    
+    
+}
+.img-banho-gel{
+    padding-left:200px;
+    padding-top: 150px;
+}
+
+
+
+.txt-fibra{
+    width: 780px;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 250px;
+    padding-left: 250px ;
+}
+
+.txt-fibra p{
+    color: #6d6d6d;
+    font-size: 20pt;
+}
+.img-fibra{
+    padding-top: 80px;
+}
+
+.quem-somos{
+    padding-top: 250px;
+}
+.quem-somos p{
+    width: 1200px;
+    color: #6d6d6d;
+    font-size: 20pt;
+    padding: 35px;
+    padding-bottom: 80px;
+    
+}
+.linha{
+    margin: auto;
+    background-color: #6d6d6d;
+    width: 1200px;
+    height: 2px;
+    font-size: 1pt;
+}
+/* FIM CONTENT */
+
+/* BARRA INFERIOR */
+.bar-inf{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p{
+    text-align: center;
+    font: italic 14pt arial;
+    color: #6d6d6d;
+}
+.nome-site{
+    color: #6d6d6d;
+    font-size: 18pt;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 60px 30px;
+}
+
+footer nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 60px;
+    padding-left: 30px;
+
+}
+
+.redes-sociais ul li:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: .2s;
+}
+/* FIM BARRA INFERIOR */
+
+/* AGENDAMENTO */
+section.agendamento{
+    width: 1600px;
+    padding: 40px;
+    margin: 0 auto;
+    height: 100dvh;
+}
+.agendamento h1{
+    text-align: center;
+    padding: 50px 0;
+    color: #252525;
+    background-color: #bababa;
+    border-radius: 35px;
+}
+
+.profissionais{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-profissional{
+    display: inline-block;
+    object-fit: cover;
+    padding-left: 113px;
+    padding-top: 50px;
+}
+/* FIM ESTILO GERAL */
+/* PROFISSIONAL ESQUERDA */
+.profissional-esquerda{
+    padding-left: 190px;
+    padding-top: 160px;
+    position: absolute;
+}
+.btn-select-left{
+    margin-top: 890px;
+    margin-left: 187px;
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 50px;
+    background-color: #1DE55F;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 16pt;
+    color: #ffffff;
+    position: absolute;
+    cursor: pointer;
+}
+.btn-select-left:hover{
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: 0 0 15px #1de560;
+
+}
+/* FIM PROFISSIONAL ESQUERDA */
+/* PROFISSIONAL CENTRO */
+.profissional-centro{
+    padding-left: 660px;
+    padding-top: 160px;
+    position: absolute;
+}
+.btn-select-center{
+    margin-top: 890px;
+    margin-left: 658px;
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 50px;
+    background-color: #1DE55F;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 16pt;
+    color: #ffffff;
+    position: absolute;
+    cursor: pointer;
+}
+.btn-select-center:hover{
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: 0 0 15px #1de560;
+
+}
+/* FIM PROFISSIONAL CENTRO */
+/* PROFISSIONAL DIREITA */
+
+.profissional-direita{
+    padding-left: 1130px;
+    padding-top: 160px;
+    position: absolute;
+}
+
+.btn-select-right{
+    margin-top: 890px;
+    margin-left: 1128px;
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 50px;
+    background-color: #1DE55F;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 16pt;
+    color: #ffffff;
+    position: absolute;
+    cursor: pointer;
+}
+.btn-select-right:hover{
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: 0 0 15px #1de560;
+
+}
+/* FIM PROFISSIONAL DIREITA */
+/* FIM AGENDAMENTO */
